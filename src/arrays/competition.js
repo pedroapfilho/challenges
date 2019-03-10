@@ -1,4 +1,4 @@
-const compare = (a, b) => {
+const competition = (a, b) => {
   let aPoints = 0
   let bPoints = 0
 
@@ -10,4 +10,4 @@ const compare = (a, b) => {
   return [aPoints, bPoints]
 }
 
-compare([1, 2, 3], [2, 1, 5])
+competition([1, 2, 3], [2, 1, 5])
