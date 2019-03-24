@@ -1,23 +1,35 @@
-// TODO I have to take some time to really explain this one
+const stringToRepeat = 'aabcde'
 
-const repeatedString = (chars, numberOfChars, charToCheck) => {
-  let restOfLetters = 0
+const numberOfTimes = 100
 
-  let remainingLetters = 0
+const charToCount = 'a'
 
-  let doesNotFitOnNumberOfChars = numberOfChars % chars.length
+// Take the stringToRepeat and repeat it until you reach the limit, that is
+// the numberOfTimes, and then, find how many times the charToCount appears on it
 
-  for (let counter = chars.length; counter >= 0; counter--) {
-    if (chars.charAt(counter) === charToCheck) {
-      restOfLetters++
+const repeatedString = (stringToRepeat, numberOfTimes, charToCount) => {
+  // Here I find the how many stringToRepeats fits entirely inside the numberOfTimes
+  let fracNumber = Math.trunc(numberOfTimes / stringToRepeat.length)
 
-      if (counter < doesNotFitOnNumberOfChars) remainingLetters += 1
-    }
-  }
+  // Here I calculate how many will remain
+  let reminder = numberOfTimes % stringToRepeat.length
 
-  const numberOfRepetitions = ((numberOfChars - doesNotFitOnNumberOfChars) / chars.length * restOfLetters) + remainingLetters
+  let counter = 0
 
-  return numberOfRepetitions
+  // Here I find the number of repeated strings at the stringToRepeat
+  for (let i = 0; i < stringToRepeat.length; i++) if (stringToRepeat[i] === charToCount) counter += 1
+
+  // Taking the number of repetitions that I found above and multiplying by the
+  // number of times that the string fits inside the numberOfTimes entirely
+  counter = counter * fracNumber
+
+  // Calculating the rest
+  for (let i = 0; i < reminder; i++) if (stringToRepeat[i] === charToCount) counter += 1
+
+  // On this one I can't add a console.log to help you understand the loop, but I think
+  // I added everything you should know to understand this code on the comments
+
+  return counter
 }
 
-repeatedString('aabcdea', 10, 'a')
+repeatedString(stringToRepeat, numberOfTimes, charToCount)
