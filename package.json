@@ -1,8 +1,8 @@
 {
-  "name": "discoveries",
+  "name": "challenges",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/pedroapfilho/discoveries.git",
+  "repository": "https://github.com/pedroapfilho/challenges.git",
   "author": "Pedro Filho <pedro@filho.me>",
   "license": "MIT",
   "scripts": {

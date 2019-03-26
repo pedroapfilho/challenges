@@ -4,8 +4,8 @@ const numberOfTimes = 100
 
 const charToCount = 'a'
 
-// Take the stringToRepeat and repeat it until you reach the limit, that is
-// the numberOfTimes, and then, find how many times the charToCount appears on it
+// Take the stringToRepeat and repeat it until you reach the numberOfTimes
+// Find how many times the charToCount appears on this string
 
 const repeatedString = (stringToRepeat, numberOfTimes, charToCount) => {
   // Here I find the how many stringToRepeats fits entirely inside the numberOfTimes
