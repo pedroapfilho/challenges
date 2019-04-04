@@ -12,7 +12,7 @@ const arr = [
 // Get the unique objects of this array based on a key
 // Just remove the duplicate ones
 
-const getUnique = (arr, key = 'id') => {
+const getUniqueObjects = (arr, key = 'id') => {
   const unique = arr
 
     // passing all keys
@@ -30,4 +30,4 @@ const getUnique = (arr, key = 'id') => {
   return unique
 }
 
-console.log(getUnique(arr, 'id'))
+getUniqueObjects(arr, 'id')
