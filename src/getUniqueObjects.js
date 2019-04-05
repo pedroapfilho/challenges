@@ -12,22 +12,15 @@ const arr = [
 // Get the unique objects of this array based on a key
 // Just remove the duplicate ones
 
-const getUniqueObjects = (arr, key = 'id') => {
-  const unique = arr
-
-    // passing all keys
-    .map(e => e[key])
-
-    // store the keys of the unique objects
-    .map((e, i, final) => final.indexOf(e) === i && i)
-
-    // eliminate the dead keys
-    .filter(e => arr[e])
-
-    // store unique objects
-    .map(e => arr[e])
-
-  return unique
+const getUniqueObjects = (arr, id = 'id') => {
+  arr.reduce((acc, current) => {
+    const x = acc.find(item => item[id] === current[id])
+    if (!x) {
+      return acc.concat([current])
+    } else {
+      return acc
+    }
+  }, [])
 }
 
 getUniqueObjects(arr, 'id')
