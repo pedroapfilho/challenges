@@ -13,13 +13,10 @@ const arr = [
 // Just remove the duplicate ones
 
 const getUniqueObjects = (arr, id = 'id') => {
-  arr.reduce((acc, current) => {
-    const x = acc.find(item => item[id] === current[id])
-    if (!x) {
-      return acc.concat([current])
-    } else {
-      return acc
-    }
+  arr.reduce((acc, val) => {
+    const x = acc.find(item => item[id] === val[id])
+    if (!x) return acc.concat([val])
+    else return acc
   }, [])
 }
 
