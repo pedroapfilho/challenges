@@ -9,10 +9,10 @@ const charToCount = 'a'
 
 const repeatedString = (stringToRepeat, numberOfTimes, charToCount) => {
   // Here I find the how many stringToRepeats fits entirely inside the numberOfTimes
-  let fracNumber = Math.trunc(numberOfTimes / stringToRepeat.length)
+  const fracNumber = Math.trunc(numberOfTimes / stringToRepeat.length)
 
   // Here I calculate how many will remain
-  let reminder = numberOfTimes % stringToRepeat.length
+  const reminder = numberOfTimes % stringToRepeat.length
 
   let counter = 0
 
