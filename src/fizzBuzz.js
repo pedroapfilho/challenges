@@ -16,16 +16,16 @@ const fizzBuzz = num => {
   let fizzBuzzArray = []
 
   for (let i = 1; i <= num; i++) {
-    (i % 3 === 0 && i % 5 === 0
-      ? fizzBuzzArray = [...fizzBuzzArray, 'FizzBuzz']
+    i % 3 === 0 && i % 5 === 0
+      ? (fizzBuzzArray = [...fizzBuzzArray, 'FizzBuzz'])
       : i % 3 === 0
-        ? fizzBuzzArray = [...fizzBuzzArray, 'Fizz']
+        ? (fizzBuzzArray = [...fizzBuzzArray, 'Fizz'])
         : i % 5 === 0
-          ? fizzBuzzArray = [...fizzBuzzArray, 'Buzz']
-          : fizzBuzzArray = [...fizzBuzzArray, i])
+          ? (fizzBuzzArray = [...fizzBuzzArray, 'Buzz'])
+          : (fizzBuzzArray = [...fizzBuzzArray, i])
   }
 
   return fizzBuzzArray
-}
+};
 
 fizzBuzz(times)
