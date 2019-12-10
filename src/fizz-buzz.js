@@ -1,4 +1,4 @@
-const times = 100
+const times = 100;
 
 // This one is classic, I'll put the problem below:
 
@@ -13,19 +13,19 @@ const times = 100
 // and console.log the value inside the array. Izipizi
 
 const fizzBuzz = num => {
-  let fizzBuzzArray = []
+  let fizzBuzzArray = [];
 
   for (let i = 1; i <= num; i++) {
     i % 3 === 0 && i % 5 === 0
-      ? (fizzBuzzArray = [...fizzBuzzArray, 'FizzBuzz'])
+      ? (fizzBuzzArray = [...fizzBuzzArray, "FizzBuzz"])
       : i % 3 === 0
-        ? (fizzBuzzArray = [...fizzBuzzArray, 'Fizz'])
-        : i % 5 === 0
-          ? (fizzBuzzArray = [...fizzBuzzArray, 'Buzz'])
-          : (fizzBuzzArray = [...fizzBuzzArray, i])
+      ? (fizzBuzzArray = [...fizzBuzzArray, "Fizz"])
+      : i % 5 === 0
+      ? (fizzBuzzArray = [...fizzBuzzArray, "Buzz"])
+      : (fizzBuzzArray = [...fizzBuzzArray, i]);
   }
 
-  return fizzBuzzArray
+  return fizzBuzzArray;
 };
 
-fizzBuzz(times)
+fizzBuzz(times);
