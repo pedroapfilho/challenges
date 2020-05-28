@@ -1,15 +1,7 @@
 {
   "name": "challenges",
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/pedroapfilho/challenges.git",
   "author": "Pedro Filho <pedro@filho.me>",
-  "license": "MIT",
-  "scripts": {},
-  "xo": {
-    "prettier": true
-  },
-  "devDependencies": {
-    "xo": "^0.25.3"
-  }
+  "license": "MIT"
 }

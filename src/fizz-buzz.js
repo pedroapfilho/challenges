@@ -12,7 +12,7 @@ const times = 100;
 // If you really really want to console.log this one, just use a forEach
 // and console.log the value inside the array. Izipizi
 
-const fizzBuzz = num => {
+const fizzBuzz = (num) => {
   let fizzBuzzArray = [];
 
   for (let i = 1; i <= num; i++) {
