@@ -22,7 +22,7 @@ const maxSubarraySum = (arr, n) => {
 
   for (let i = n; i < arr.length; i += 1) {
     // Here we go subtracting the last and adding the next value, until the end of the array
-    tempSum = tempSum - arr[i - n] + arr[i];
+    tempSum += arr[i] - arr[i - n];
 
     // If the temp value is bigger than the max, then we use it as the max
     if (tempSum > maxSum) {
