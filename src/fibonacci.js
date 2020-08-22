@@ -4,8 +4,10 @@ const num = 10;
 // untill the position you pass to the function
 
 const fibonacci = (n) => {
+  // Escape hatch
   if (n === 0) return 0;
 
+  // Escape hatch
   if (n === 1) return 1;
 
   // It illustrate the concept of recursivity, runs untill it gets to 1 or 0
