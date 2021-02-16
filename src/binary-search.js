@@ -11,7 +11,7 @@ const binarySearch = (arr, val) => {
   // We run it while we don't find the "end" middle value. If it passes this one without returning,
   // the array doesn't contain the value
   while (min <= max) {
-    // Gets the middle value suming min and max and dividing by 2 (using Math.floor to not have decimals)
+    // Gets the middle value summing min and max and dividing by 2 (using Math.floor to not have decimals)
     const middle = Math.floor((min + max) / 2);
 
     // Get the current value of the middle
